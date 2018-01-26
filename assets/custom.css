@@ -1,0 +1,110 @@
+
+.fa-caret-down {
+  color: red;
+}
+
+
+.fa-caret-up {
+  color: green;
+}
+
+/* First two should be green ( or a colour that shows it's good ) */
+tr.contestant:nth-child(1),
+tr.contestant:nth-child(2) {
+  background-color: #9aeda7;
+}
+
+
+/* Next four should be orange ( or average colour ) */
+tr.contestant:nth-child(3),
+tr.contestant:nth-child(4),
+tr.contestant:nth-child(5),
+tr.contestant:nth-child(6) {
+  background-color: #f1f442;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+/* last two should be red ( or a bad colour ) */
+tr.contestant:nth-last-child(1),
+tr.contestant:nth-last-child(2),
+tr.contestant:nth-last-child(3) {
+  background-color: #ff8484;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+  .contestant td{
+  font-weight: 900;
+}
+
+body > nav{
+  background-color: : #351966;
+}
+
+#bs-example-navbar-collapse-1{
+  background-color: #351966;
+}
+
+body > nav > div > div.navbar-header > a{
+  background-color: #351966;
+}
+
+body > nav > div{
+  background-color: #351966;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a{
+   color: white;
+}
+
+.navbar-brand a{
+  color: white;
+}
+
+.red-indicate{
+
+}
+
+body > nav > div > div.navbar-header > .navbar-brand{
+  color: white;
+
+}
+
+
+
+body > div > div.colour-keys-table > table > tbody > tr:nth-child(2) > td.red-indicate > button{
+  color: red;
+}
+
+body > div > div.colour-keys-table > table > tbody > tr:nth-child(3) > td.amber-indicate > button{
+  color: orange;
+}
+
+body > div > div.colour-keys-table > table > tbody > tr:nth-child(4) > td.green-indicate > button{
+  color: green;
+}
